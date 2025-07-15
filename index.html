@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Fatin Nur</title>
+    <link rel="icon" type="image/x-icon" href="./img/social.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800 bg-opacity-90 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html">
+                <img src="./img/social.png" class="w-10 h-10 rounded-full" alt="Farhan Fatin Nur Shujoy">
+            </a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-indigo-400 transition">Home</a>
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 py-3">
+            <a href="#home" class="block py-2 hover:text-indigo-400 transition">Home</a>
+            <a href="#about" class="block py-2 hover:text-indigo-400 transition">About</a>
+            <a href="#skills" class="block py-2 hover:text-indigo-400 transition">Skills</a>
+            <a href="#projects" class="block py-2 hover:text-indigo-400 transition">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-indigo-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-indigo-600 rounded-full opacity-20 blur-xl"></div>
+                    <div class="absolute inset-4 bg-indigo-600 rounded-full opacity-10 blur-lg"></div>
+                    <div class="relative w-full h-full rounded-full  overflow-hidden border-4 border-indigo-500">
+                        <!-- Replace with your actual image -->
+                        <img src="./img/shujoy.png" alt="Farhan Fatin" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Hi, I'm <span class="text-indigo-400">Farhan</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl mb-6 text-gray-400">I Build Web Applications.</h2>
+                <p class="text-gray-400 mb-8 max-w-lg">
+                    I like to build digital experiences with modern web technologies.
+                    Focused on creating clean, efficient, and user-friendly applications.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">View
+                        Work</a>
+                    <a href="#contact"
+                        class="border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-3 rounded-lg transition">Contact
+                        Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="text-indigo-400">About</span> Me
+            </h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="w-64 h-64  overflow-hidden border-0 ">
+                        <img src="./img/programming_2011655.png" alt="Farhan Fatin" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                    <p class="text-gray-400 mb-6">
+                        I'm Farhan Fatin Nur Shujoy, I'm passionate about full stack Web-development with expertise in
+                        modern web
+                        technologies.
+                        I specialize in creating responsive, performant, and accessible web applications that deliver
+                        exceptional user experiences.
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        With a strong foundation in HTML, CSS, JavaScript, and Node.js, I bring ideas to life through
+                        clean code
+                        and thoughtful design. I'm constantly learning and adapting to new technologies to stay at the
+                        forefront of web development.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">Name:</span> Farhan Fatin
+                                Nur Shujoy</p>
+                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">Email:</span>
+                                shujoy123@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">From:</span>
+                                Dhaka, Bangladesh</p>
+                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">Freelance:</span>
+                                Available</p>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="inline-block mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">
+                        Download CV <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                My <span class="text-indigo-400">Skills</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-laptop-code text-indigo-400 mr-3"></i> Frontend Development
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">HTML</span>
+                                <span class="text-gray-400">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">CSS</span>
+                                <span class="text-gray-400">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">JavaScript</span>
+                                <span class="text-gray-400">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Bootstrap</span>
+                                <span class="text-gray-400">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Tailwind CSS</span>
+                                <span class="text-gray-400">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-server text-indigo-400 mr-3"></i> Backend Development
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Node.js</span>
+                                <span class="text-gray-400">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Express</span>
+                                <span class="text-gray-400">40%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">REST APIs</span>
+                                <span class="text-gray-400">40%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">MongoDB</span>
+                                <span class="text-gray-400">5%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                My <span class="text-indigo-400">Projects</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 1"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
+                        <p class="text-gray-400 mb-4">
+                            A full-featured e-commerce platform with product listings, cart functionality, and secure
+                            checkout.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Portfolio Template</h3>
+                        <p class="text-gray-400 mb-4">
+                            A responsive portfolio template built with Tailwind CSS and JavaScript animations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 3"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                        <p class="text-gray-400 mb-4">
+                            A productivity application for managing tasks with drag-and-drop functionality and local
+                            storage.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">API</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-block border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-3 rounded-lg transition">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                Get <span class="text-indigo-400">In Touch</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <p class="text-gray-400 mb-6">
+                        Feel free to reach out to me for any questions or opportunities. I'm always open to discussing
+                        new projects, creative ideas, or opportunities to be part of your vision.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-indigo-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-400">farhan@example.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-indigo-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-400">+123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-indigo-400 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-400">Your City, Country</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-medium mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-400 mb-2">Your Name</label>
+                            <input type="text" id="name"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-400 mb-2">Your Email</label>
+                            <input type="email" id="email"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-400 mb-2">Subject</label>
+                            <input type="text" id="subject"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-400 mb-2">Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                &copy; 2023 Farhan Fatin Nur Shujoy. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center shadow-lg transition-opacity opacity-0 invisible">
+        <i class="fas fa-arrow-up text-white"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
