@@ -8,113 +8,176 @@
     <link rel="icon" type="image/x-icon" href="./img/social.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gradient-dark text-gray-100 font-sans overflow-x-hidden">
+    <!-- Animated Background Particles -->
+    <div class="particles" id="particles"></div>
+
     <!-- Navigation -->
-    <nav class="fixed w-full bg-gray-800 bg-opacity-90 z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html">
-                <img src="./img/social.png" class="w-10 h-10 rounded-full" alt="Farhan Fatin Nur Shujoy">
+    <nav class="fixed w-full nav-blur z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="transition-transform hover:scale-110">
+                <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+                    F
+                </div>
             </a>
 
             <div class="hidden md:flex space-x-8">
-                <a href="#home" class="hover:text-indigo-400 transition">Home</a>
-                <a href="#about" class="hover:text-indigo-400 transition">About</a>
-                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
-                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
-                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+                <a href="#home" class="hover:text-indigo-400 transition-all duration-300 relative group">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="hover:text-indigo-400 transition-all duration-300 relative group">
+                    About
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#skills" class="hover:text-indigo-400 transition-all duration-300 relative group">
+                    Skills
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#projects" class="hover:text-indigo-400 transition-all duration-300 relative group">
+                    Projects
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="hover:text-indigo-400 transition-all duration-300 relative group">
+                    Contact
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none transition-transform hover:scale-110">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 py-3">
-            <a href="#home" class="block py-2 hover:text-indigo-400 transition">Home</a>
-            <a href="#about" class="block py-2 hover:text-indigo-400 transition">About</a>
-            <a href="#skills" class="block py-2 hover:text-indigo-400 transition">Skills</a>
-            <a href="#projects" class="block py-2 hover:text-indigo-400 transition">Projects</a>
-            <a href="#contact" class="block py-2 hover:text-indigo-400 transition">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden glass px-6 py-4 transition-all duration-300">
+            <a href="#home" class="block py-3 hover:text-indigo-400 transition">Home</a>
+            <a href="#about" class="block py-3 hover:text-indigo-400 transition">About</a>
+            <a href="#skills" class="block py-3 hover:text-indigo-400 transition">Skills</a>
+            <a href="#projects" class="block py-3 hover:text-indigo-400 transition">Projects</a>
+            <a href="#contact" class="block py-3 hover:text-indigo-400 transition">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center pt-20">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+    <section id="home" class="min-h-screen flex items-center pt-20 relative">
+        <!-- Floating Geometric Shapes -->
+        <div
+            class="absolute top-20 right-10 w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full floating-object opacity-20">
+        </div>
+        <div class="absolute top-40 right-40 w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 transform rotate-45 floating-object opacity-20"
+            style="animation-delay: -1s;"></div>
+        <div class="absolute bottom-40 right-20 w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full floating-object opacity-20"
+            style="animation-delay: -2s;"></div>
 
-
-
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">
-                    Hi, I'm <span class="text-indigo-400">Farhan</span>
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                <div class="mb-4">
+                    <span class="text-indigo-400 text-lg font-medium">Hello, I'm</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <span
+                        class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Farhan</span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl mb-6 text-gray-400">I Build Web Applications.</h2>
-                <p class="text-gray-400 mb-8 max-w-lg">
-                    I like to build digital experiences with modern web technologies.
-                    Focused on creating clean, efficient, and user-friendly applications.
+                <h2 id="typing-text" class="text-2xl md:text-4xl mb-8 text-gray-300 typing-animation font-light">
+                    I Build Web Applications.
+                </h2>
+                <p class="text-gray-400 mb-10 max-w-lg text-lg leading-relaxed">
+                    I create digital experiences with modern web technologies.
+                    Focused on building clean, efficient, and user-friendly applications that make a difference.
                 </p>
-                <div class="flex space-x-4">
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
                     <a href="#projects"
-                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">View
-                        Work</a>
+                        class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-4 rounded-full transition-all duration-300 glow-btn text-center font-medium">
+                        View My Work
+                    </a>
                     <a href="#contact"
-                        class="border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-3 rounded-lg transition">Contact
-                        Me</a>
+                        class="glass border-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-white px-8 py-4 rounded-full transition-all duration-300 text-center font-medium">
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div
+                        class="w-80 h-80 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full opacity-20 floating-object">
+                    </div>
+                    <div class="absolute inset-0 w-80 h-80 border-4 border-indigo-400 rounded-full opacity-30 floating-object"
+                        style="animation-delay: -1s;"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
+    <section id="about" class="py-24 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">
-                <span class="text-indigo-400">About</span> Me
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+                <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">About</span>
+                Me
             </h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 flex justify-center">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80">
-                        <div class="absolute inset-0 bg-indigo-600 rounded-full opacity-20 blur-xl"></div>
-                        <div class="absolute inset-4 bg-indigo-600 rounded-full opacity-10 blur-lg"></div>
-                        <div class="relative w-full h-full rounded-full  overflow-hidden border-4 border-indigo-500">
-                            <!-- Replace with your actual image -->
-                            <img src="./img/shujoy.png" alt="Farhan Fatin" class="w-full h-full object-cover">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/3 fade-in">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 mx-auto bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl opacity-20 floating-object">
                         </div>
+                        <div class="absolute inset-0 w-64 h-64 mx-auto border-4 border-indigo-400 rounded-2xl opacity-30 floating-object"
+                            style="animation-delay: -1s;"></div>
                     </div>
                 </div>
-                <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
-                    <p class="text-gray-400 mb-6">
-                        I'm Farhan Fatin Nur Shujoy, I'm passionate about full stack Web-development with expertise in
-                        modern web
+
+                <div class="lg:w-2/3 fade-in">
+                    <h3 class="text-3xl font-semibold mb-6 text-indigo-400">Who am I?</h3>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        I'm Farhan Fatin Nur Shujoy, a passionate full-stack web developer with expertise in modern web
                         technologies.
                         I specialize in creating responsive, performant, and accessible web applications that deliver
                         exceptional user experiences.
                     </p>
-                    <p class="text-gray-400 mb-6">
+                    <p class="text-gray-300 mb-8 text-lg leading-relaxed">
                         With a strong foundation in HTML, CSS, JavaScript, and Node.js, I bring ideas to life through
-                        clean code
-                        and thoughtful design. I'm constantly learning and adapting to new technologies to stay at the
-                        forefront of web development.
+                        clean code and thoughtful design.
+                        I'm constantly learning and adapting to new technologies to stay at the forefront of web
+                        development.
                     </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">Name:</span> Farhan Fatin
-                                Nur Shujoy</p>
-                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">Email:</span>
-                                shujoy123@gmail.com</p>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-indigo-400 w-6"></i>
+                                <span class="text-gray-400 ml-3"><span class="text-indigo-400 font-medium">Name:</span>
+                                    Farhan Fatin Nur Shujoy</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-indigo-400 w-6"></i>
+                                <span class="text-gray-400 ml-3"><span class="text-indigo-400 font-medium">Email:</span>
+                                    shujoy123@gmail.com</span>
+                            </div>
                         </div>
-                        <div>
-                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">From:</span>
-                                Dhaka, Bangladesh</p>
-                            <p class="text-gray-400"><span class="text-indigo-400 font-medium">Freelance:</span>
-                                Available</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-indigo-400 w-6"></i>
+                                <span class="text-gray-400 ml-3"><span class="text-indigo-400 font-medium">From:</span>
+                                    Dhaka, Bangladesh</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-briefcase text-indigo-400 w-6"></i>
+                                <span class="text-gray-400 ml-3"><span
+                                        class="text-indigo-400 font-medium">Freelance:</span> Available</span>
+                            </div>
                         </div>
                     </div>
-                    <a href="#"
-                        class="inline-block mt-6 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">
+
+                    <a href="https://drive.google.com/file/d/1GCbhkmpiJQgTkYIusLLAgXNqvbV8B3KG/view?usp=sharing"
+                        class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-4 rounded-full transition-all duration-300 glow-btn font-medium">
                         Download CV <i class="fas fa-download ml-2"></i>
                     </a>
                 </div>
@@ -123,106 +186,120 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20">
+    <section id="skills" class="py-24 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">
-                My <span class="text-indigo-400">Skills</span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+                My <span
+                    class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Skills</span>
             </h2>
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 gap-12">
                 <!-- Frontend Skills -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center">
-                        <i class="fas fa-laptop-code text-indigo-400 mr-3"></i> Frontend Development
+                <div class="bg-gradient-card p-8 rounded-2xl shadow-2xl fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-laptop-code text-indigo-400 mr-4 text-3xl"></i>
+                        Frontend Development
                     </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">HTML</span>
-                                <span class="text-gray-400">95%</span>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">HTML</span>
+                                <span class="text-indigo-400 font-semibold">90%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">CSS</span>
-                                <span class="text-gray-400">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 90%"></div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-indigo-500 to-blue-500 h-3 rounded-full"
+                                    style="--width: 90%"></div>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">JavaScript</span>
-                                <span class="text-gray-400">85%</span>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">CSS</span>
+                                <span class="text-indigo-400 font-semibold">90%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">Bootstrap</span>
-                                <span class="text-gray-400">88%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 88%"></div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full"
+                                    style="--width: 90%"></div>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">Tailwind CSS</span>
-                                <span class="text-gray-400">92%</span>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">JavaScript</span>
+                                <span class="text-indigo-400 font-semibold">70%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 92%"></div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-yellow-500 to-orange-500 h-3 rounded-full"
+                                    style="--width: 70%"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Bootstrap</span>
+                                <span class="text-indigo-400 font-semibold">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full"
+                                    style="--width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Tailwind CSS</span>
+                                <span class="text-indigo-400 font-semibold">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full"
+                                    style="--width: 80%"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Backend Skills -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center">
-                        <i class="fas fa-server text-indigo-400 mr-3"></i> Backend Development
+                <div class="bg-gradient-card p-8 rounded-2xl shadow-2xl fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-server text-indigo-400 mr-4 text-3xl"></i>
+                        Backend Development
                     </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">Node.js</span>
-                                <span class="text-gray-400">50%</span>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Node.js</span>
+                                <span class="text-indigo-400 font-semibold">50%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">Express</span>
-                                <span class="text-gray-400">40%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 40%"></div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full"
+                                    style="--width: 50%"></div>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">REST APIs</span>
-                                <span class="text-gray-400">40%</span>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Express</span>
+                                <span class="text-indigo-400 font-semibold">40%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 40%"></div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-gray-500 to-gray-400 h-3 rounded-full"
+                                    style="--width: 40%"></div>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-400">MongoDB</span>
-                                <span class="text-gray-400">5%</span>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">REST APIs</span>
+                                <span class="text-indigo-400 font-semibold">40%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-600 h-2 rounded-full" style="width: 5%"></div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-500 h-3 rounded-full"
+                                    style="--width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">MongoDB</span>
+                                <span class="text-indigo-400 font-semibold">5%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-green-600 to-green-500 h-3 rounded-full"
+                                    style="--width: 5%"></div>
                             </div>
                         </div>
                     </div>
@@ -232,192 +309,218 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
+    <section id="projects" class="py-24 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">
-                My <span class="text-indigo-400">Projects</span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+                My <span
+                    class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Projects</span>
             </h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="./img/Screenshot 2025-07-15 163025.png" alt="Project 1"
-                            class="w-full h-full object-cover">
+                <div class="project-card bg-gradient-card rounded-2xl overflow-hidden shadow-2xl fade-in">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-500 to-purple-600 opacity-80"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-white text-4xl"></i>
+                        </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
-                        <p class="text-gray-400 mb-4">
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-400">E-commerce Website</h3>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
                             A full-featured e-commerce platform with product listings, cart functionality, and secure
                             checkout.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">HTML</span>
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">CSS</span>
+                            <span
+                                class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                            <span
+                                class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
                         </div>
-                        <div class="flex space-x-3">
-                            <a href="https://github.com/shujuwing/Finexo" class="text-indigo-400 hover:text-indigo-300">
-                                <i class="fab fa-github"></i> Code
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/shujuwing/Finexo"
+                                class="text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
                             </a>
-                            <a href="https://shujuwing.github.io/Finexo/" class="text-indigo-400 hover:text-indigo-300">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            <a href="https://shujuwing.github.io/Finexo/"
+                                class="text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="./img/weather app.png" alt="Project 2" class="w-full h-full object-cover">
+                <div class="project-card bg-gradient-card rounded-2xl overflow-hidden shadow-2xl fade-in">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="w-full h-full bg-gradient-to-br from-blue-500 to-cyan-600 opacity-80"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-cloud-sun text-white text-4xl"></i>
+                        </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Weather-Sphere</h3>
-                        <p class="text-gray-400 mb-4">
-                            A responsive portfolio template built with Tailwind CSS and JavaScript animations.
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-400">Weather-Sphere</h3>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            A responsive weather application with real-time data and beautiful animations.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">HTML</span>
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">Tailwind
+                                CSS</span>
+                            <span
+                                class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
                         </div>
-                        <div class="flex space-x-3">
+                        <div class="flex space-x-4">
                             <a href="https://github.com/shujuwing/WeatherSphere"
-                                class="text-indigo-400 hover:text-indigo-300">
-                                <i class="fab fa-github"></i> Code
+                                class="text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
                             </a>
                             <a href="https://shujuwing.github.io/WeatherSphere/"
-                                class="text-indigo-400 hover:text-indigo-300">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                class="text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-                    <div class="h-48 overflow-hidden">
-                        <img src="./img/taka tracekr.png" alt="Project 3" class="w-full h-full object-cover">
+                <div class="project-card bg-gradient-card rounded-2xl overflow-hidden shadow-2xl fade-in">
+                    <div class="h-48 overflow-hidden relative">
+                        <div class="w-full h-full bg-gradient-to-br from-green-500 to-emerald-600 opacity-80"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-4xl"></i>
+                        </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Taka-Tracker</h3>
-                        <p class="text-gray-400 mb-4">
-                            A productivity application for managing tasks with drag-and-drop functionality and local
-                            storage.
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-400">Taka-Tracker</h3>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            A comprehensive expense tracking application with analytics and budget management.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                            <span class="bg-gray-700 text-indigo-400 px-3 py-1 rounded-full text-sm">API</span>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">HTML</span>
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">CSS</span>
+                            <span
+                                class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                            <span class="glass text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">API</span>
                         </div>
-                        <div class="flex space-x-3">
+                        <div class="flex space-x-4">
                             <a href="https://github.com/shujuwing/Expense-Tracker"
-                                class="text-indigo-400 hover:text-indigo-300">
-                                <i class="fab fa-github"></i> Code
+                                class="text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
                             </a>
                             <a href="https://shujuwing.github.io/Expense-Tracker/"
-                                class="text-indigo-400 hover:text-indigo-300">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                class="text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-12">
+            <div class="text-center mt-16 fade-in">
                 <a href="https://github.com/shujuwing"
-                    class="inline-block border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-3 rounded-lg transition">
-                    Visit Github <i class="fas fa-arrow-right ml-2"></i>
+                    class="inline-block glass border-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-white px-8 py-4 rounded-full transition-all duration-300 font-medium">
+                    Visit GitHub <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20">
+    <section id="contact" class="py-24 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">
-                Get <span class="text-indigo-400">In Touch</span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+                Get <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">In
+                    Touch</span>
             </h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-                    <p class="text-gray-400 mb-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-400">Contact Information</h3>
+                    <p class="text-gray-300 mb-8 text-lg leading-relaxed">
                         Feel free to reach out to me for any questions or opportunities. I'm always open to discussing
                         new projects, creative ideas, or opportunities to be part of your vision.
                     </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-indigo-400 mt-1 mr-4"></i>
+                    <div class="space-y-6">
+                        <div class="flex items-start group">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
                             <div>
-                                <h4 class="font-medium">Email</h4>
-                                <p class="text-gray-400">shujoy123@gmail.com</p>
+                                <h4 class="font-semibold text-indigo-400 mb-1">Email</h4>
+                                <p class="text-gray-300">shujoy123@gmail.com</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-indigo-400 mt-1 mr-4"></i>
+                        <div class="flex items-start group">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
                             <div>
-                                <h4 class="font-medium">Phone</h4>
-                                <p class="text-gray-400">+88015688919448</p>
+                                <h4 class="font-semibold text-indigo-400 mb-1">Phone</h4>
+                                <p class="text-gray-300">+88015688919448</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-indigo-400 mt-1 mr-4"></i>
+                        <div class="flex items-start group">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
                             <div>
-                                <h4 class="font-medium">Location</h4>
-                                <p class="text-gray-400">Dhaka , Bangladesh</p>
+                                <h4 class="font-semibold text-indigo-400 mb-1">Location</h4>
+                                <p class="text-gray-300">Dhaka, Bangladesh</p>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-8">
-                        <h4 class="font-medium mb-4">Follow Me</h4>
+                    <div class="mt-12">
+                        <h4 class="font-semibold mb-6 text-indigo-400 text-lg">Follow Me</h4>
                         <div class="flex space-x-4">
                             <a href="https://github.com/shujuwing"
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
-                                <i class="fab fa-github"></i>
+                                class="w-12 h-12 rounded-full bg-gradient-to-r from-gray-700 to-gray-600 flex items-center justify-center hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-github text-white"></i>
                             </a>
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
-                                <i class="fab fa-linkedin-in"></i>
+                                class="w-12 h-12 rounded-full bg-gradient-to-r from-gray-700 to-gray-600 flex items-center justify-center hover:from-blue-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-linkedin-in text-white"></i>
                             </a>
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
-                                <i class="fab fa-twitter"></i>
+                                class="w-12 h-12 rounded-full bg-gradient-to-r from-gray-700 to-gray-600 flex items-center justify-center hover:from-blue-500 hover:to-blue-400 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-twitter text-white"></i>
                             </a>
                             <a href="#"
-                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
-                                <i class="fab fa-instagram"></i>
+                                class="w-12 h-12 rounded-full bg-gradient-to-r from-gray-700 to-gray-600 flex items-center justify-center hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-instagram text-white"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <form class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-400 mb-2">Your Name</label>
-                            <input type="text" id="name"
-                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white">
+                <div class="fade-in">
+                    <form id="contact-form" class="bg-gradient-card p-8 rounded-2xl shadow-2xl">
+                        <div class="mb-6">
+                            <label for="name" class="block text-indigo-400 mb-2 font-medium">Your Name</label>
+                            <input type="text" id="name" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 text-white transition-all duration-300">
                         </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-400 mb-2">Your Email</label>
-                            <input type="email" id="email"
-                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white">
+                        <div class="mb-6">
+                            <label for="email" class="block text-indigo-400 mb-2 font-medium">Your Email</label>
+                            <input type="email" id="email" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 text-white transition-all duration-300">
                         </div>
-                        <div class="mb-4">
-                            <label for="subject" class="block text-gray-400 mb-2">Subject</label>
-                            <input type="text" id="subject"
-                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white">
+                        <div class="mb-6">
+                            <label for="subject" class="block text-indigo-400 mb-2 font-medium">Subject</label>
+                            <input type="text" id="subject" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 text-white transition-all duration-300">
                         </div>
-                        <div class="mb-4">
-                            <label for="message" class="block text-gray-400 mb-2">Message</label>
-                            <textarea id="message" rows="4"
-                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500 text-white"></textarea>
+                        <div class="mb-6">
+                            <label for="message" class="block text-indigo-400 mb-2 font-medium">Message</label>
+                            <textarea id="message" rows="4" required
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 text-white transition-all duration-300 resize-none"></textarea>
                         </div>
                         <button type="submit"
-                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition">
+                            class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-4 rounded-lg transition-all duration-300 glow-btn font-medium">
                             Send Message <i class="fas fa-paper-plane ml-2"></i>
                         </button>
+                        <div id="form-message" class="mt-4 text-center hidden"></div>
                     </form>
                 </div>
             </div>
@@ -425,21 +528,48 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 py-8">
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-400">
+            <div class="mb-6">
+                <div
+                    class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto">
+                    F
+                </div>
+            </div>
+            <p class="text-gray-400 text-lg">
                 &copy; 2024 Farhan Fatin Nur Shujoy. All rights reserved.
+            </p>
+            <p class="text-gray-500 mt-2">
+                Built with passion and modern web technologies.
             </p>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
     <button id="back-to-top"
-        class="fixed bottom-8 right-8 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center shadow-lg transition-opacity opacity-0 invisible">
-        <i class="fas fa-arrow-up text-white"></i>
+        class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 opacity-0 invisible transform translate-y-4 hover:scale-110 glow-btn">
+        <i class="fas fa-arrow-up text-white text-lg"></i>
     </button>
 
-    <script src="script.js"></script>
+    <!-- Success Message Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-gradient-card p-8 rounded-2xl shadow-2xl max-w-md mx-4 text-center">
+            <div
+                class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-green-400">Message Sent!</h3>
+            <p class="text-gray-300 mb-6">Thank you for reaching out. I'll get back to you soon!</p>
+            <button id="close-modal"
+                class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
 </body>
 
 </html>
